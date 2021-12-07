@@ -18,19 +18,20 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 <style>
-	._2UgQw{
-		background-color: var(--corvid-background-color,rgba(var(--bg,var(--color_17)),var(--alpha-bg,1)));
-    	border: solid var(--corvid-border-color,rgba(var(--brd,var(--color_15)),var(--alpha-brd,1))) var(--corvid-border-width,var(--brw,0));
-    	cursor: pointer!important;
-	}
-	._1Qjd7{
-		font: var(--fnt,var(--font_5));
-		transition: var(--trans2,color .4s ease 0s);
-		color: var(--corvid-color,rgb(var(--txt,var(--color_15))));
-		position: relative;
-		white-space: nowrap;
-		margin: 0;
-	}
+	._2UgQw ._1Qjd7 {
+            font: var(--fnt, var(--font_5));
+            transition: var(--trans2, color .4s ease 0s);
+            color: var(--corvid-color, rgb(var(--txt, var(--color_15))));
+            position: relative;
+            white-space: nowrap;
+            margin: 0
+        }
+		body.device-mobile-optimized ._2UgQw[aria-disabled=false]:active ._1Qjd7 {
+            color: rgb(var(--txth, var(--color_15)))
+        }
+		body:not(.device-mobile-optimized) ._2UgQw[aria-disabled=false]:hover ._1Qjd7 {
+            color: rgb(var(--txth, var(--color_15)))
+        }
 </style>
 </head>
 <body>
